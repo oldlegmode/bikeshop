@@ -1,0 +1,43 @@
+@src-img: "../img/";
+@src-fonts: "fonts/";
+
+@html-size-base: 10px;
+
+@yellow: #e2e017;
+
+//-----------------------Примеси фонов----------------------
+
+.mixin__bg-color (@bg-color) {
+	background-color: @bg-color;
+};
+.mixin__bg-img(@img-name) {
+	background-image: url("@{src-img}@{img-name}");
+};
+.mixin__bg-position (@bg-position: center) {
+	background-position: @bg-position;
+};
+.mixin__bg-repeat (@bg-repeate: no-repeat) {
+	background-repeat: @bg-repeate;
+};
+.mixin__bg-attachment (@bg-attachment: scroll) {
+	background-attachment: @bg-attachment;
+};
+
+.mixin__bg (@bg-attachment: scroll, @bg-color, @bg-img-name, @bg-position: center, @bg-repeate: no-repeat) {
+	background-attachment: @bg-attachment;
+	background-color: @bg-color;
+	background-image: url("@{src-img}@{img-name}");
+	background-position: @bg-position;
+	background-repeat: @bg-repeate;
+};
+
+//----------------------mixins-----------------
+
+//---------------mixins--for--link--------------
+
+.link-reset() {
+	font-family: inherit;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: inherit;
+}
