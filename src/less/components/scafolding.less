@@ -2,22 +2,91 @@
   box-sizing: border-box;
  
 }
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?82791283');
+  src: url('../font/fontello.eot?82791283#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?82791283') format('woff2'),
+       url('../font/fontello.woff?82791283') format('woff'),
+       url('../font/fontello.ttf?82791283') format('truetype'),
+       url('../font/fontello.svg?82791283#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
-  font-family: "Lato Regular", sans-serif;
-  src:  url("../font/Lato-Regular.ttf"),
-        url("../font/Lato-Regular.eot"),
-        url("../font/Lato-Regular.woff"),
-        url("../font/Lato-Regular.otf");
+  font-family: "Roboto Regular", sans-serif;
+  src:  url("../font/Roboto-Regular.ttf"),
+        url("../font/Roboto-Regular.eot"),
+        url("../font/Roboto-Regular.woff"),
+        url("../font/Roboto-Regular.svg"),
+        url("../font/Roboto-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Italic", sans-serif;
+  src:  url("../font/Roboto-Italic.ttf"),
+        url("../font/Roboto-Italic.eot"),
+        url("../font/Roboto-Italic.woff"),
+        url("../font/Roboto-Italic.svg"),
+        url("../font/Roboto-Italic.otf");
+}
+
+@font-face {
+  font-family: "Roboto Light", sans-serif;
+  src:  url("../font/Roboto-Light.ttf"),
+        url("../font/Roboto-Light.eot"),
+        url("../font/Roboto-Light.woff"),
+        url("../font/Roboto-Light.svg"),
+        url("../font/Roboto-Light.otf");
+}
+
+@font-face {
+  font-family: "Roboto Bold", sans-serif;
+  src:  url("../font/Roboto-Bold.ttf"),
+        url("../font/Roboto-Bold.eot"),
+        url("../font/Roboto-Bold.woff"),
+        url("../font/Roboto-Bold.svg"),
+        url("../font/Roboto-Bold.otf");
+}
+
+@font-face {
+  font-family: "Roboto Thin", sans-serif;
+  src:  url("../font/Roboto-Thin.ttf"),
+        url("../font/Roboto-Thin.eot"),
+        url("../font/Roboto-Thin.woff"),
+        url("../font/Roboto-Thin.svg"),
+        url("../font/Roboto-Thin.otf");
 }
 
 html {
   font-size: @font-size-base;
-  font-family: "Lato Regular", sans-serif;
-   font-weight: 300;
+  font-family: "Roboto Regular", sans-serif;
 }
 
 use,
 svg {
   margin: 0;
+}
+h1 {
+  font-size:@font-size-h1;
+  text-transform: uppercase;
+  font-family: "Roboto Bold", sans-serif;
+}
+h2 {
+  font-size:@font-size-h2;
+  text-transform: uppercase;
+  font-family: "Roboto Bold", sans-serif;
+}
+h3 {
+  font-size:@font-size-h3; 
+  text-transform: uppercase;
+  font-family: "Roboto Bold", sans-serif;
+}
+h4 {
+  font-size:@font-size-h4; 
+  text-transform: uppercase;
+  font-family: "Roboto Bold", sans-serif;
 }
