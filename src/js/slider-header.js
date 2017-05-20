@@ -13,6 +13,9 @@
       sliderTabs[i].classList.add('animated');
       sliderTabs[i].classList.add('fadeInDownBig');
       sliderTabs[i].addEventListener('click', contentPrevNextToggle);
+      sliderTabs[i].addEventListener('mouseover', function (e) {
+        this.classList.remove('fadeInDownBig'); 
+      });
     }
   });
   document.addEventListener('DOMContentLoaded', function () {
@@ -35,16 +38,10 @@
   });
 
   function contentPrevNextToggle(event) {
-    var target = event.target;
 
-
-    while ( !target.classList.contains('slider-header__toggle') ) {
-      target = target.parentElement;
-    }
-    
     event.preventDefault();
 
-    if (target.classList.contains('slider-header__toggle--next')) {
+    if (this.classList.contains('slider-header__toggle--next')) {
       for (var i = 0; i < arrContentElements.length; i++) {
         if ( !arrContentElements[i].classList.contains('slider-header__content--hidden') && (i === arrContentElements.length - 1) ) {
           arrContentElements[i].classList.add('slider-header__content--hidden');
@@ -57,7 +54,7 @@
         }
       }
     };
-    if (target.classList.contains('slider-header__toggle--prev')) {
+    if (this.classList.contains('slider-header__toggle--prev')) {
       for (var i = arrContentElements.length - 1; i >= 0; i--) {
         if ( !arrContentElements[i].classList.contains('slider-header__content--hidden') && (i === 0) ) {
           arrContentElements[i].classList.add('slider-header__content--hidden');
