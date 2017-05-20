@@ -9,9 +9,9 @@
 
 
   document.addEventListener('DOMContentLoaded', function () {
-  	for (var i = 0; i < sliderTabs.length; i++) {
-    	sliderTabs[i].classList.add('animated');
-    	sliderTabs[i].classList.add('fadeInDownBig');
+    for (var i = 0; i < sliderTabs.length; i++) {
+      sliderTabs[i].classList.add('animated');
+      sliderTabs[i].classList.add('fadeInDownBig');
       sliderTabs[i].addEventListener('click', contentPrevNextToggle);
     }
   });
