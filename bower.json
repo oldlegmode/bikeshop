@@ -1,0 +1,17 @@
+{
+  "name": "bikeshop",
+  "description": "Landing site the bike shop",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "^3.5.2"
+  }
+}
