@@ -71,21 +71,21 @@
     .make-md-column(3.33);
     .make-lg-column(3.33);
   }
-  &__fixed {
+  &--fixed {
     .mixin__bg-color ('#4b4b4b');
     .mixin__bg-img('categories_item-1.jpg');
     .mixin__bg-position (center);
     .mixin__bg-repeat ();
     .mixin__bg-attachment();
   }
-  &__premium {
+  &--premium {
     //.mixin__bg-color ("#4b4b4b");
     .mixin__bg-img('categories_item-2.jpg');
     .mixin__bg-position (center);
     .mixin__bg-repeat();
     .mixin__bg-attachment();
   }
-  &__city {
+  &--city {
     //.mixin__bg-color ("#4b4b4b");
     .mixin__bg-img('categories_item-3.jpg');
     .mixin__bg-position (center);
@@ -257,6 +257,8 @@
     .make-lg-column-offset(4);
   }
   &__contact-text {
+    position: relative;
+
     display: block;
 
     margin-bottom: 45px;
@@ -264,6 +266,8 @@
     text-align: center;
   }
   &__contact-input {
+    position: relative;
+
     box-sizing: border-box;
     margin: 0;
     margin-bottom: 20px;
@@ -277,6 +281,8 @@
     border-radius: 8px;
   }
   &__contact-input--firstname {
+    position: relative;
+
     min-width: 47%;
     max-width: 100%;
     margin-right: 5%;
@@ -302,9 +308,18 @@
 
     color: #fff;
     border-radius: 10px;
-    background-color: #b7b7b7;
+    background-color: darken(#b7b7b7, 30);
+  }
+  &__label {
+    position: relative;
   }
   //--------------HOVER------------------
+  &__contact-btn:hover {
+    
+    text-shadow: 0 1px 3px #000;
+    background: linear-gradient(to top, #fefcea, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.20) 50%,rgba(255, 255, 255, 0) 100%);
+    background-color: #b7b7b7;
+  }
   &__contact-input:focus,&__contact-input--firstname:focus,&__contact-input--surname:focus,&__contact-input--email:focus,&__contact-textarea:focus {
     outline: none;
     box-shadow: 0 1px 3px #92b4eb;

@@ -6,6 +6,8 @@
   var subMenuStatus = false;
 
 
+
+
   list.addEventListener('mouseover', hoverSiteNavOver);
   list.addEventListener('mouseout', hoverSiteNavOut); 
 
@@ -14,7 +16,13 @@
     event.preventDefault();
 
     var target = event.target;
+    var div = document.getElementById('site-nav-toggle');
+    var screenWidth = document.documentElement.clientWidth ;
 
+//отменяет hover на медиа xs<765
+    if( screenWidth < 750 ) {
+      return;
+    };
     //если дживение курсора на элементе
     if (remeberElement) return;
 
