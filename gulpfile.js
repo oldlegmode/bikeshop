@@ -45,7 +45,7 @@ gulp.task('html:build', function () {
 });
 
 
-gulp.task('style:build', /*['less:build'],*/ function () {
+gulp.task('style:build', ['less:build'], function () {
    
     gulp.src('src/less/**/style.less') //Выберем наш style.less
     	.pipe(debug({title: 'src'})) //Показ происходящего
