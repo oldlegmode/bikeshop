@@ -193,6 +193,63 @@
       top: 70px;
     }
   }
+    .page-main {
+    &__error-message {
+      //position: absolute;
+      z-index: 1000;
+
+      display: block;
+
+      padding: 5px;
+      border: 1px solid red;
+      border-radius: 5px;
+      margin: 0;
+
+      color: #000;
+      font-size: 0.9rem;
+
+      background-color: #fff;
+        &.name {
+          //position: absolute;
+          top: 0%;
+          right: 103%;
+
+        }
+        &.surname {
+          //position: absolute;
+          top: 0%;
+          left: 103%;
+        }
+        &.email {
+          //position: absolute;
+          top: 225%;
+          left: 0%;
+
+        }
+    }
+  }
+  .page-footer {
+    &__logo-link {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__logi-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .footer-nav {
+    margin: 0 !important;
+    &__list {
+      float: none !important;
+      text-align: center !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      padding: 0 !important;
+    }
+  }
 }
 @media (min-width: 750px) and (max-width: 970px) {
   .header-top {
@@ -224,6 +281,59 @@
       width: 100%;
     }
   } */
+  .page-main {
+    &__error-message {
+      //position: absolute;
+      z-index: 1000;
+
+      display: block;
+
+      padding: 5px;
+      border: 1px solid red;
+      border-radius: 5px;
+      margin: 0;
+
+      color: #000;
+      font-size: 0.9rem;
+
+      background-color: #fff;
+        &.name {
+          //position: absolute;
+          top: 0%;
+          right: 103%;
+
+        }
+        &.surname {
+          //position: absolute;
+          top: 0%;
+          left: 103%;
+        }
+        &.email {
+          //position: absolute;
+          top: 225%;
+          left: 0%;
+
+        }
+    }
+  }
+  .page-footer {
+    &__logo-wrap {
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+    .page-footer {
+    &__logo-link {
+      display: block;
+      margin-left: auto !important;
+      margin-right: 0 !important;
+    }
+    &__logi-img {
+      display: block;
+      margin-left: auto !important;
+      margin-right: 0 !important;
+    }
+  }
 }
 @media (min-width: 970px) and (max-width: 1170px) {
   .popular-item {
@@ -257,6 +367,78 @@
       width: 100%;
     }
   } */
+  .page-main {
+    &__error-message {
+      position: absolute;
+      z-index: 1000;
+
+      display: block;
+      width: 70%;
+      padding: 5px;
+      border: 1px solid red;
+      border-radius: 5px;
+      margin: 0;
+
+      color: #000;
+      font-size: 0.9rem;
+
+      background-color: #fff;
+        &.name {
+          position: absolute;
+          top: 0%;
+          right: 103%;
+          &::before {
+            content: "";
+
+            position: absolute;
+            top: 3px;
+            right: -14%;
+
+            display: block;
+            width: 0px;
+            height: 0px;
+            border: 10px solid transparent;
+            border-left: 10px solid red;
+          }
+        }
+        &.surname {
+          position: absolute;
+          top: 0%;
+          left: 103%;
+          &::before {
+            content: "";
+
+            position: absolute;
+            top: 3px;
+            left: -15%;
+
+            display: block;
+            width: 0px;
+            height: 0px;
+            border: 10px solid transparent;
+            border-right: 10px solid red;
+          }
+        }
+        &.email {
+          position: absolute;
+          top: 225%;
+          left: 0%;
+          &::before {
+            content: "";
+
+            position: absolute;
+            top: -21px;
+            left: 3%;
+
+            display: block;
+            width: 0px;
+            height: 0px;
+            border: 10px solid transparent;
+            border-bottom: 10px solid red;
+          }
+        }
+    }
+  }
 }
 @media (min-width: 1170px) {
   .page-main {
@@ -331,6 +513,4 @@
         }
     }
   }
-
-
 }

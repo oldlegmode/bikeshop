@@ -37,6 +37,12 @@
     } 
   });
 
+  document.querySelector('.slider-header__btn').addEventListener('click', function (e) {
+    e.preventDefault();
+    document.getElementById('section-popular').scrollIntoView(true);
+  })
+
+
   function contentPrevNextToggle(event) {
 
     event.preventDefault();
@@ -68,4 +74,5 @@
       }
     };
   }
+
 })(window, document);

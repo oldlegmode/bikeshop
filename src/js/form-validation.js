@@ -63,6 +63,11 @@ CustomValidation.prototype = {
   // Получаем общий текст сообщений об ошибках
   getInvalidities: function() {
     return this.invalidities.join('. \n');
+  },
+
+  // Сбросим общий текст сообщений об ошибках
+  resetInvalidity: function() {
+    return this.invalidities.length = 0;
   }
 };
 
@@ -99,7 +104,10 @@ submit.addEventListener('click', function(e) {
       if (!customValidityMessageForHTML) {
         customValidityMessageForHTML ='Required field';
       }
-      input.insertAdjacentHTML('afterend', '<p class="page-main__error-message ' + input.name + '">' + customValidityMessageForHTML + '</p>')
+      input.insertAdjacentHTML('afterend', '<p class="page-main__error-message ' + input.name + '">' + customValidityMessageForHTML + '</p>');
+      inputCustomValidation.resetInvalidity();
+      customValidityMessage = '';
+
       var stopSubmit = true;
       //Запустим анимацию через 2 секунды
       setTimeout(function () {
