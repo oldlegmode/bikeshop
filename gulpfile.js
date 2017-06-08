@@ -116,7 +116,7 @@ gulp.task('js:build', function () {
         .pipe(sourcemaps.init())
         .pipe(concat('common.js'))
         .pipe(debug({title: 'concat'}))
-        .pipe(uglify())
+        //.pipe(uglify())
         .pipe(sourcemaps.write()) 
         .pipe(gulp.dest('build/js'))
 });

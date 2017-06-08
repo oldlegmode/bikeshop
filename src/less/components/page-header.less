@@ -5,10 +5,45 @@
   border-bottom: 2px solid @grey;
 
   .mixin__bg-color (@grey);
-  .mixin__bg-img('bg_header.jpg');
+  .mixin__bg-img('');
   .mixin__bg-position (center);
   .mixin__bg-repeat (no-repeat);
   .mixin__bg-attachment ();
+  @media (max-width: 750px){
+    background-image: url('../img/bg_header_extra-small.jpg');
+    background-position: right 0% top 44%;
+    @media (min-resolution: 1.5dppx) {
+      background-image: url('../img/bg_header_extra-small-x2.jpg');
+    }
+  }
+  @media (min-width: 750px) and (max-width: 970px) {
+    background-image: url('../img/bg_header_small.jpg');
+    background-position: right 0% top 44%;
+    @media (min-resolution: 1.5dppx) {
+      background-image: url('../img/bg_header_small-x2.jpg');
+    }
+  }
+  @media (min-width: 970px) and (max-width: 1170px) {
+    background-image: url('../img/bg_header_medium.jpg');
+    background-position: right 0% top 44%;
+    @media (min-resolution: 1.5dppx) {
+      background-image: url('../img/bg_header_medium-x2.jpg');
+    }
+  }
+  @media (min-width: 1170px) and (max-width: 1390px){
+    background-image: url('../img/bg_header_large.jpg');
+    background-position: right 0% top 44%;
+    @media (min-resolution: 1.5dppx) {
+      background-image: url('../img/bg_header_large-x2.jpg');
+    }
+  }
+  @media (min-width: 1390px){
+    background-image: url('../img/bg_header_extra-large.jpg');
+    background-position: right 0% top 44%;
+    @media (min-resolution: 1.5dppx) {
+      background-image: url('../img/bg_header_extra-large-x2.jpg');
+    }
+  }
   &__top-inner {
     padding-top: 25px;
     padding-bottom: 185px;
@@ -47,6 +82,7 @@
     width: 170px;
     height: 50px;
     margin-left: 24%;
+    
   }
   &__logo-pic {
     position: absolute;

@@ -11,6 +11,7 @@
   "devDependencies": {
     "browser-sync": "^2.18.8",
     "del": "^2.2.2",
+    "eslint-config-rallycoding": "^3.2.0",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-cached": "^1.1.1",
     "gulp-clean-css": "^3.0.4",
@@ -29,6 +30,7 @@
     "minimatch": "^3.0.2"
   },
   "dependencies": {
+    "eslint": "^3.19.0",
     "gulp-svgmin": "^1.2.3",
     "gulp-svgstore": "^6.1.0",
     "imagemin-pngquant": "^5.0.0"
